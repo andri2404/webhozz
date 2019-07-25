@@ -30,3 +30,11 @@ Route::get('coba', function () {
 });
 
 Route::get ('laravel','laravelController@laravel');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/category', 'CategoryController@index');
+
+Route::get('/category/create', 'CategoryController@create');
+Route::post('/category/create', 'CategoryController@store');
