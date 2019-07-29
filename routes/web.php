@@ -32,9 +32,27 @@ Route::get('coba', function () {
 Route::get ('laravel','laravelController@laravel');
 Auth::routes();
 
+// tampilan halaman utama atau beranda
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/category', 'CategoryController@index');
+// insert data
 
+Route::get('/category', 'CategoryController@index');
 Route::get('/category/create', 'CategoryController@create');
 Route::post('/category/create', 'CategoryController@store');
+
+// update data
+
+Route::get('/category/{id}/edit', 'CategoryController@edit');
+Route::put('/category/{id}/edit', 'CategoryController@update');
+
+// delete data
+
+Route::delete('category/{id}', 'CategoryController@destroy');
+
+
+
+// tampilan product
+Route::get('/product', 'ProductController@index');
+Route::get('/product/create', 'ProductController@create');
+Route::post('/product/create', 'ProductController@ram');
