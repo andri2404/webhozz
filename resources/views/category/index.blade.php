@@ -57,6 +57,7 @@
          
       @endforelse
     </tbody>
-  </table>  
+  </table> 
+  {{$category->render()}} 
 </div>
 @endsection

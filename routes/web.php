@@ -56,3 +56,8 @@ Route::delete('category/{id}', 'CategoryController@destroy');
 Route::get('/product', 'ProductController@index');
 Route::get('/product/create', 'ProductController@create');
 Route::post('/product/create', 'ProductController@ram');
+
+// membuat product Relasi one to one atau one to many
+
+
+Route :: resource('product','ProductController');

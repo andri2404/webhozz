@@ -6,6 +6,15 @@
         <form action="/product/create" method="POST">
             @csrf
             <div class ="form-group">
+                <label>Category</label>
+                 <select name="category_id" class="form-control">
+
+                     @foreach($category as $c)
+                        <option value ="{{$c->id}}">{{$c->name}}</option>
+                    @endforeach
+
+                 </select>
+                 
                 <label>Name Product</label>
                 <input type="text" name="name" class="form-control"placeholder="Product name">
                 <label>Supplier</label>

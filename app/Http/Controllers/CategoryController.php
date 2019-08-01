@@ -11,9 +11,9 @@ class CategoryController extends Controller
 
         // kalo searchnya ada isinya
         if(request('search') != ''){
-            $category = Category::where ('name', 'like', '%'.request('search').'%')->get();
+            $category = Category::where ('name', 'like', '%'.request('search').'%')->paginate(2);
         }else{
-            $category = Category :: all();
+            $category = Category :: paginate(2);
         }
         
         return view ('category.index', compact ('category'));
