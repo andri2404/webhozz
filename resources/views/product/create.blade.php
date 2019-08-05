@@ -20,7 +20,9 @@
                 <label>Supplier</label>
                 <input type="text" name="supplier" class="form-control"placeholder="Supplier name">
                 <label>Price</label>
-                <input type="integer" name="price" class="form-control"placeholder="price">
+                <input type="integer" name="price" class="form-control"placeholder="Price">
+                <label>Other</label>
+                <input type="text" name="other" class="form-control"placeholder="Other">
 
             </div>
             <button type="submit" class="btn btn-primary">submit</button>

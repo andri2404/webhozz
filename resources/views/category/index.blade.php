@@ -15,7 +15,7 @@
       </div>
     <button type="submit" class="btn btn-primary"> Search</button>    
     </form>  <br/>
-    <a href="/category" class ="btn btn-info mb-3">Reset</a> 
+    <a href="/category/" class ="btn btn-info mb-3">Reset</a> 
 
     
     

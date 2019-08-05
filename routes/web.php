@@ -61,3 +61,13 @@ Route::post('/product/create', 'ProductController@ram');
 
 
 Route :: resource('product','ProductController');
+
+
+// route untuk ekspor & impor excel
+
+Route::get('product-export','ProductController@export');
+
+// route untuk import data
+
+Route::post('product-import', 'ProductController@import');
+Route::resource('posts', 'PostsController');

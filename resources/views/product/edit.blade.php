@@ -23,20 +23,24 @@
 
             <div class ="form-group">
                 <label>Name</label>
-                <input type="text" name="dari_form" class="form-control" placeholder="Product name" 
-                value="{{ $product->name}}">
+                <input type="text" name="dari_form1" class="form-control" placeholder="Product name" 
+                value="{{ $product-> name}}">
 
                 <label>Supplier</label>
-                <input type="text" name="dari_form" class="form-control" placeholder="Supplier name" 
-                value="{{ $product->supplier}}">
+                <input type="text" name="dari_form2" class="form-control" placeholder="Supplier name" 
+                value="{{ $product-> supplier}}">
 
                 <label>Price</label>
-                <input type="integer" name="dari_form" class="form-control" placeholder=" Price" 
-                value="{{ $product->price}}">
+                <input type="integer" name="dari_form3" class="form-control" placeholder="Price" 
+                value="{{ $product-> price}}">
+                <label>Other</label>
+                <input type="text" name="dari_form4" class="form-control" placeholder="Other" 
+                value="{{ $product-> other}}">
+
             </div>
             <button type="submit" class="btn btn-primary">submit</button>
             
-        </form>
+        </form>         
         
 </div>
 @endsection
